@@ -1,24 +1,4 @@
-# Redis on Kubernetes
 
-Create a cluster with [kind](https://kind.sigs.k8s.io/docs/user/quick-start/)
-
-```
-kind create cluster --name redis --image kindest/node:v1.18.4
-```
-
-## Namespace
-
-```
-kubectl create ns redis
-```
-
-## Storage Class
-
-```
-kubectl get storageclass
-NAME                 PROVISIONER             RECLAIMPOLICY   VOLUMEBINDINGMODE      ALLOWVOLUMEEXPANSION   AGE
-standard (default)   rancher.io/local-path   Delete          WaitForFirstConsumer   false                  84s
-```
 
 ## Deployment: Redis nodes
 
